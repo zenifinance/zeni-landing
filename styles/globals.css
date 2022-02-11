@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'NEW ACADEMY';
+  src: url('../assets/fonts/NEWACADEMY.ttf');
+}
+
+@font-face {
+  font-family: 'Tenali Ramakrishna';
+  src: url('../assets/fonts/TenaliRamakrishna-Regular.ttf');
+}
