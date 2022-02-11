@@ -1,29 +1,33 @@
 const Button = ({
-  content,
-  onClick,
+  name,
+  link,
 }: {
-  content: string
-  onClick?: () => void
+  name: string
+  link: string
 }) => {
   return (
     <div
       className={`
         bg-gradient-to-b from-light-purple to-light-green
         p-[1px] rounded-md
-        my-2 sm:mx-5 sm:my-0
-        w-full sm:max-w-[250px]
+        my-2 sm:mx-8 sm:my-0
+        w-[250px] h-[70px]
       `}
-      onClick={onClick}
     >
       <div
         className={`
           bg-dark-grey hover:bg-gray-600
-          px-8 py-2 rounded-md
-          capitalize text-light-green text-center
+          text-light-green text-center
           cursor-pointer
+          w-full h-full rounded-md
+          flex items-center justify-center
+          text-[45px] pt-[10px]
         `}
+        style={{fontFamily: 'Tenali Ramakrishna'}}
       >
-        {content}
+        <a href={link}>
+          <a>{name}</a>
+        </a>
       </div>
     </div>
   )

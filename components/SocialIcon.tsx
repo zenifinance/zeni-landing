@@ -1,21 +1,27 @@
-import { IconType } from "react-icons/lib"
+import Image from "next/image"
 
 const SocialIcon = ({
-  Icon,
-  onClick,
+  name,
+  link,
 }: {
-  Icon: IconType
-  onClick?: () => void
+  name: string
+  link: string
 }) => {
   return (
     <div
       className={`
-        mx-3
+        -mx-3
         cursor-pointer
       `}
-      onClick={onClick}
     >
-      <Icon size={40} color="#73FFE3" />
+      <a href={link}>
+        <Image
+          src={require("../assets/images/" + name + ".svg")}
+          width={110}
+          height={110}
+          alt={name}
+        />
+      </a>
     </div>
   )
 }
