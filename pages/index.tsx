@@ -67,6 +67,19 @@ const Home: NextPage = () => {
         <SocialIcon name="medium" link={process.env.MEDIUM_LINK || ""} />
         <SocialIcon name="gitbook" link={process.env.GITBOOK_LINK || ""} />
       </div>
+
+      <div
+        className={`
+          absolute left-1/2 bottom-14 translate-x-[-50%]
+        `}
+      >
+        <Image
+          src={require("../assets/images/logo.png")}
+          width={200}
+          height={200}
+          alt="Z"
+        />
+      </div>
     </div>
   )
 }
