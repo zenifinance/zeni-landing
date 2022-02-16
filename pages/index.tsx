@@ -19,6 +19,20 @@ const Home: NextPage = () => {
         layout="fill"
         alt=""
       />
+      
+      <div
+        className={`
+          absolute left-1/2 bottom-14 translate-x-[-50%]
+        `}
+      >
+        <Image
+          src={require("../assets/images/logo.png")}
+          width={200}
+          height={200}
+          alt="Z"
+        />
+      </div>
+      
       <div
         className={`
           absolute left-0 top-0 w-full h-full
@@ -55,6 +69,7 @@ const Home: NextPage = () => {
           <Button name="Docs" link={process.env.DOCS_LINK || ""} />
         </div>
       </div>
+      
       <div
         className={`
           absolute left-0 bottom-0 w-full
@@ -66,19 +81,6 @@ const Home: NextPage = () => {
         <SocialIcon name="github" link={process.env.GITHUB_LINK || ""} />
         <SocialIcon name="medium" link={process.env.MEDIUM_LINK || ""} />
         <SocialIcon name="gitbook" link={process.env.GITBOOK_LINK || ""} />
-      </div>
-
-      <div
-        className={`
-          absolute left-1/2 bottom-14 translate-x-[-50%]
-        `}
-      >
-        <Image
-          src={require("../assets/images/logo.png")}
-          width={200}
-          height={200}
-          alt="Z"
-        />
       </div>
     </div>
   )

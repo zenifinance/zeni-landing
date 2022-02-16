@@ -16,7 +16,7 @@ const Button = ({
     >
       <div
         className={`
-          bg-dark-grey hover:bg-gray-600
+          bg-dark-grey hover:shadow-[0px_2px_5px_1px_#FF53ED]
           text-light-green text-center
           cursor-pointer
           w-full h-full rounded-md
