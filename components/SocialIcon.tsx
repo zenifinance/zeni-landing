@@ -20,6 +20,7 @@ const SocialIcon = ({
           width={110}
           height={110}
           alt={name}
+          quality={100}
         />
       </a>
     </div>
