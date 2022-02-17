@@ -81,6 +81,7 @@ const Home: NextPage = () => {
           width={200}
           height={200}
           alt="Z"
+          quality={100}
         />
       </div>
     </div>
